@@ -1,0 +1,1 @@
+install node and npm globally to run this

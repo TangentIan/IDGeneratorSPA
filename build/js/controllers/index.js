@@ -1,0 +1,3 @@
+define([
+    './form-ctrl'
+], function () {});

@@ -1,0 +1,43 @@
+[
+    {
+        "id": 3,
+        "longitude": 28.17855449999998,
+        "latitude": -26.263882,
+        "status": "LUNCH",
+        "driver": {
+            "id": 3,
+            "name": "Francis",
+            "surname": "Nana",
+            "contactNumber": "0769872310"
+        },
+        "lastUpdate": 201505202146
+    },
+    {
+        "id": 1,
+        "longitude": 28.917855449999998,
+        "latitude": -26.23882,
+        "status": "BOOKED",
+        "driver": {
+            "id": 1,
+            "name": "Tumelo",
+            "surname": "Matsinyane",
+            "contactNumber": "0722123675"
+        },
+        "lastUpdate": 201505290944
+    },
+    {
+        "id": 2,
+        "longitude": 28.57855449999998,
+        "latitude": -26.7263882,
+        "status": "AVAILABLE",
+        "driver": {
+            "id": 2,
+            "name": "Bongane",
+            "surname": "Ntila",
+            "contactNumber": "0713756178"
+        },
+        "lastUpdate": 201505282344
+    }
+
+
+  ]

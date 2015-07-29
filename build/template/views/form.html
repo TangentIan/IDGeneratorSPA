@@ -1,0 +1,74 @@
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4 col-md-offset-4">
+    <div class="form-panel panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Please fill in the form below to generate an ID</h3>
+        </div>
+        <div class="panel-body">
+            <pre  ng-show="errorMsg" > <em class = "error">{{errorMsg}}</em></pre>
+            <pre  ng-show="generatedID">Generated ID : <em class="success">{{generatedID}}</em></pre>
+            <form role="form">
+                <fieldset>
+
+                    <div class="form-group">
+
+                        <label for="DoB">Select your date of birth</label>
+
+                          <div id = "DoB">
+                                <p class="input-group">
+                                  <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="opened"
+                                         datepicker-options="dateOptions"   close-text="Close" />
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" ng-click="open($event)">
+                                        <i class="fa fa-calendar"></i></button>
+                                  </span>
+                                 </p>
+                            </div>
+                    </div>
+                     <div class="form-group">
+                    <label for="radioGroupGender">Gender</label>
+                    <div id="radioGroupGender">
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" ng-model="user.gender" value="male" />male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" ng-model="user.gender" value="female"/>female
+                        </label>
+                    </div>
+
+                </div>
+                  <div class="form-group">
+                        <label for="radioGroupCountry">country of birth</label>
+                        <div id="radioGroupCountry">
+                            <label class="radio-inline">
+                                <input type="radio" name="country" ng-model="user.country" value="SA" />South Africa
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="country" ng-model="user.country" value="foreign"/>Foreign
+                            </label>
+                        </div>
+
+                   </div>
+                    <div class="row row-centered">
+                        <div class="col-xs-6 col-centered">
+                            <button type="button" ng-click="reset()" class="btn btn-primary">
+                               Reset
+                            </button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button type="button" ng-click="submit(user)" class="btn btn-primary">
+                               Submit
+                            </button>
+                        </div>
+                      </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+

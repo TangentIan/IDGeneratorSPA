@@ -1,0 +1,2 @@
+define(['./generator-service'],
+function(){});
